@@ -10,7 +10,7 @@ const Form = ({ handleRegOrLog, text }) => {
   const { register, handleSubmit } = useForm();
   return (
     <div className="flex  font-poppins h-screen bg-gradient-to-r from-[rgba(146,179,176,1)] via-[ rgba(62,149,171,1)] to-[rgba(38,110,154,1)]  justify-center items-center flex-col gap-6">
-      <h1 className="text-6xl  font-bold tracking-widest">WELCOME</h1>
+      <h1 className="text-6xl font-bold tracking-widest">WELCOME</h1>
 
       <form
         className="flex gap-8 flex-col text-white "
