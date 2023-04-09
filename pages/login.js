@@ -4,8 +4,7 @@ import React from "react";
 const Login = () => {
   return (
     <div>
-      {/* <SingIn /> */}
-      log
+      <SingIn />
     </div>
   );
 };

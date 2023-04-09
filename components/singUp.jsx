@@ -1,19 +1,18 @@
-// import Form from "./form";
-// import useSingUpWithEmail from "@/hook/useSingUpWithEmail";
-// import useSingInWithGoogle from "@/hook/useSingInWithGoogle";
+import Form from "./form";
+import useSingUpWithEmail from "@/hook/useSingUpWithEmail";
+import useSingInWithGoogle from "@/hook/useSingInWithGoogle";
 
 const SingUp = () => {
-//   const { createUser } = useSingUpWithEmail();
-//   const { createUserWithGoogle } = useSingInWithGoogle();
+  const { createUser } = useSingUpWithEmail();
+  const { createUserWithGoogle } = useSingInWithGoogle();
 
   return (
     <div>
-      x
-      {/* <Form
+      <Form
         handleRegOrLog={createUser}
         loginUserWithGoogle={createUserWithGoogle}
         text="register"
-      /> */}
+      />
     </div>
   );
 };
