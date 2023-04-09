@@ -8,6 +8,7 @@ const SingUp = () => {
 
   return (
     <div>
+      x
       {/* <Form
         handleRegOrLog={createUser}
         loginUserWithGoogle={createUserWithGoogle}
