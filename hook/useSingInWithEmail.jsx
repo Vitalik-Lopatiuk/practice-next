@@ -5,7 +5,6 @@ import { setUser } from "@/store/userSlice";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const useSingInWithGoogle = () => {
-    
   const router = useRouter();
   const dispatch = useDispatch();
   const auth = getAuth();
@@ -21,9 +20,9 @@ const useSingInWithGoogle = () => {
       router.push("/");
     });
   };
-  return{
-    loginUser:loginUser
-  }
+  return {
+    loginUser: loginUser,
+  };
 };
 
 export default useSingInWithGoogle;

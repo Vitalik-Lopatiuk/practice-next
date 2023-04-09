@@ -11,8 +11,7 @@ const useSingInWithGoogle = () => {
   auth.languageCode = "it";
 
   const createUserWithGoogle = () => {
-    signInWithPopup(auth, provider).then((result ) => {
-      
+    signInWithPopup(auth, provider).then((result) => {
       dispatch(
         setUser({
           email: result.user.email,
@@ -20,7 +19,7 @@ const useSingInWithGoogle = () => {
           token: result.user.accessToken,
         })
       );
-      router.push('/')
+      router.push("/");
     });
   };
   return {
