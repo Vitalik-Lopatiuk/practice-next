@@ -11,4 +11,4 @@ const firebaseConfig = {
 };
 
 
-const applocation = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
