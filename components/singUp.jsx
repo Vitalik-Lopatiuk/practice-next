@@ -1,28 +1,18 @@
-import React from "react";
 import Form from "./form";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { useDispatch } from "react-redux";
-import { setUser } from "@/store/userSlice";
-import { useRouter } from "next/router";
+import useSingUpWithEmail from "@/hook/useSingUpWithEmail";
+import useSingInWithGoogle from "@/hook/useSingInWithGoogle";
+
 const SingUp = () => {
-  const router = useRouter();
-  const dispatch = useDispatch();
-  const auth = getAuth();
-  const createUser = ({ email, password }) => {
-    createUserWithEmailAndPassword(auth, email, password).then(({ user }) => {
-      dispatch(
-        setUser({
-          email: user.email,
-          id: user.uid,
-          token: user.accessToken,
-        })
-      );
-      router.push("/");
-    });
-  };
+  const { createUser } = useSingUpWithEmail();
+  const { createUserWithGoogle } = useSingInWithGoogle();
+
   return (
     <div>
-      <Form handleRegOrLog={createUser} text="register" />
+      <Form
+        handleRegOrLog={createUser}
+        loginUserWithGoogle={createUserWithGoogle}
+        text="register"
+      />
     </div>
   );
 };
