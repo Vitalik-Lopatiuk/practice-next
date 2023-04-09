@@ -4,13 +4,13 @@ import useSingInWithGoogle from "@/hook/useSingInWithGoogle";
 
 const SingUp = () => {
   const { createUser } = useSingUpWithEmail();
-  const { createUserWithGoogle } = useSingInWithGoogle();
+  // const { createUserWithGoogle } = useSingInWithGoogle();
 
   return (
     <div>
       <Form
         handleRegOrLog={createUser}
-        loginUserWithGoogle={createUserWithGoogle}
+        // loginUserWithGoogle={createUserWithGoogle}
         text="register"
       />
     </div>

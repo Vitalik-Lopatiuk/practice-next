@@ -6,7 +6,7 @@ import line from "../public/form/Line.svg";
 import google from '../public/form/Google.svg'
 import facebook from '../public/form/Facebook.svg'
 
-const Form = ({ handleRegOrLog, text ,loginUserWithGoogle}) => {
+const Form = ({ handleRegOrLog, text }) => {
   const { register, handleSubmit } = useForm();
   return (
     <div className="flex  font-poppins h-screen bg-gradient-to-r from-[rgba(146,179,176,1)] via-[ rgba(62,149,171,1)] to-[rgba(38,110,154,1)]  justify-center items-center flex-col gap-6">
@@ -60,7 +60,7 @@ const Form = ({ handleRegOrLog, text ,loginUserWithGoogle}) => {
       </div>
 
       <div className="flex gap-4">
-      <Image onClick={loginUserWithGoogle} alt="google sinIn" src={google} />
+      <Image alt="google sinIn" src={google} />
       <Image alt="facebook sinIn" src={facebook} />
       </div>
     </div>
